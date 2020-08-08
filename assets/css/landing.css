@@ -148,7 +148,7 @@ i {
 }
 
 #about {
-    height: 50vh;
+    height: 80vh;
     background: #020202;
     position: relative;
 }
@@ -157,20 +157,20 @@ i {
     content: '';
     position: absolute;
     bottom: 0;
-    left: 0;
+	left: 0;
     border-top: 4.95rem solid #020202;
     border-left: 4.95rem solid #fc352b;
     width: 0;
 }
 
 #events {
-    height: 50vh;
+    height: 80vh;
     background: #fc352b;
     position: relative;
 }
 
 #event {
-    height: 50vh;
+    height: 80vh;
     background: white;
     position: relative;
 }
@@ -196,8 +196,13 @@ i {
 }
 
 #contact {
-    height: 50vh;
+    height: 80vh;
     background: #020202;
     position: relative;
 }
 
+@media only screen and (max-width:1023px){
+	#about:before, #event:before, #event:after{
+		border: 0;
+	}
+}
