@@ -1,11 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 #logo {
     height: 2.8rem;
 }
 body{
-	font-family: 'Poppins', sans-serif;
-	margin: -8px;
+	font-family: 'Roboto', sans-serif;
+	/* margin: -8px; */
 	overflow-x: hidden;
 }
+
+.row {
+	margin-left: 0px !important;
+	margin-right: 0px !important;
+}
+
+#event-head{
+	font-size: 12rem;
+	font-family: 'Poppins', sans-serif;
+	color: #fc352b;
+	-webkit-text-stroke: 2px black;
+	padding-left: 6rem;
+}
+
+#event-head-content{
+	font-size: 3rem;
+	font-family: 'Poppins', sans-serif;
+	margin-bottom: 1rem;
+}
+
+#event-content{
+	text-align: justify;
+	color: #fff;
+
+}
+
+#about-head{
+	font-size: 10rem;
+	font-family: 'Poppins', sans-serif;
+	color: #020202;
+	-webkit-text-stroke: 2px white;
+	padding-left: 6rem;
+	text-align: right;
+	width: 100%;
+	padding-right: 4rem;
+	margin-top: -2.5rem;
+}
+
+#about-head-content{
+	font-size: 3rem;
+	font-family: 'Poppins', sans-serif;
+	margin-bottom: 1rem;
+	color: #fc352b;
+}
+
+#about-content{
+	text-align: justify;
+	color: #fff;
+}
+
+#know-about1{
+	width: 14rem;
+	height: 4rem;
+	border: 2px solid #fc352b;
+	margin-left: 12rem;
+	margin-top: 1.5rem;
+}
+
+#know-about{
+width: 15rem;
+height: 3rem;
+border: 2px solid #fc352b;
+color: #fff;
+text-align: center;
+font-size: 2rem;
+cursor: pointer;
+margin-left: -0.62rem;
+margin-top: 0.35rem;
+}
+
+#event-about1{
+	width: 14rem;
+	height: 4rem;
+	border: 2px solid #020202;
+	margin-left: 12rem;
+	margin-top: 1.5rem;
+}
+
+#event-about{
+width: 15rem;
+height: 3rem;
+border: 2px solid #020202;
+color: #fff;
+text-align: center;
+font-size: 2rem;
+cursor: pointer;
+margin-left: -0.62rem;
+margin-top: 0.35rem;
+}
+
+
+
 * {
 	margin: 0;
 	padding: 0;
@@ -13,7 +107,7 @@ body{
 i {
 	margin-right: 10px;
 }
-/* multi-level-accordian-menu*/
+/*----------multi-level-accordian-menu------------*/
 .navbar-logo{
 	padding: 5px 15px;
 	color: #fff;
@@ -194,9 +288,18 @@ i {
 }
 
 #contact {
-    height: 80vh;
+    height: 40vh;
     background: #020202;
-    position: relative;
+	position: relative;
+	text-align: center;
+}
+
+#ContactUs{
+	font-family: 'Poppins', sans-serif;
+	font-size: 45px;
+	font-weight: bolder;
+	color: white;
+	letter-spacing: 15px;
 }
 
 @media only screen and (max-width:1023px){
