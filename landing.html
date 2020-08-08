@@ -9,12 +9,14 @@
     <link rel="stylesheet" href="./assets/css/landing.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
     <title>Microsoft Student Chapter</title>
 </head>
 <body>
     <!-- Navbar -->
     <section>
-        <nav class="navbar navbar-expand-lg navbar-mainbg">
+        <nav class="navbar navbar-expand-lg navbar-mainbg fixed-top">
         <a class="navbar-brand navbar-logo" href="#"><img src="./assets/pics/msc_logo.png" alt="Logo" id="logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fa fa-bars text-white"></i>
@@ -42,15 +44,25 @@
         </div>
     </nav>
     </section>
-<br><br>
+    <!-- VIDEO -->
     <section>
+        <div class="background-wrap">
+            <video id="video-bg-elem" preload="auto" autoplay="true" loop="loop" muted="muted">
+                <source src="./assets/videos/finalfinal.mp4" type="video/mp4"> 
+                    Video not supported
+            </video>
+        </div>
+        <div class="content">
+            <h1><span id="msft">Microsoft </span><br><span id=std_ch>Student Chapter</span></h1>
+        </div>
+    </section>
+
+    <section class="cont container-fluid px-0">
         <div id="about"></div>
         <div id="events"></div>
         <div id="event"></div>
         <div id="contact"></div>
     </section>
-
-    
     <!-- Adding JS and jQuery File -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
