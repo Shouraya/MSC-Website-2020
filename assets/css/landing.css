@@ -35,14 +35,12 @@ body{
 }
 
 #about-head{
-	font-size: 10rem;
+	font-size: 5rem;
 	font-family: 'Poppins', sans-serif;
 	color: #020202;
 	-webkit-text-stroke: 2px white;
-	padding-left: 6rem;
 	text-align: right;
 	width: 100%;
-	padding-right: 4rem;
 	margin-top: -2.5rem;
 }
 
@@ -59,24 +57,21 @@ body{
 }
 
 #know-about1{
-	width: 14rem;
-	height: 4rem;
+	width: 12.3rem;
+	height: 3.5rem;
 	border: 2px solid #fc352b;
-	margin-left: 12rem;
-	margin-top: 1.5rem;
 }
 
 #know-about{
-width: 15rem;
-height: 3rem;
+padding: 0.7rem 0.02rem 1.1rem 0;
 border: 2px solid #fc352b;
 color: #fff;
 text-align: center;
-font-size: 2rem;
+font-size: 1.9rem;
 cursor: pointer;
-margin-left: -0.62rem;
-margin-top: 0.35rem;
+margin: 5px 3.5px;
 }
+
 
 #event-about1{
 	width: 14rem;
@@ -240,7 +235,7 @@ i {
 }
 
 #about {
-    height: 80vh;
+    min-height: 80vh;
     background: #020202;
     position: relative;
 }
