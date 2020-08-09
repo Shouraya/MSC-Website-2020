@@ -347,7 +347,9 @@ i {
 	border-radius: 5px;
 	text-transform: uppercase;
 }
-
+.block {
+	margin-left:3rem;
+}
 #msft {
 	font-size: 5.5rem;
 	font-weight: bold;
