@@ -22,6 +22,8 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"
       rel="stylesheet"
     />
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Microsoft Student Chapter</title>
   </head>
   <body>
@@ -84,9 +86,13 @@
       </div>
       <div class="content">
         <h1>
-          <span id="msft">Microsoft </span><br /><span id="std_ch"
-            >Student Chapter</span
-          >
+          <div class="block">
+            <div data-aos="fade-right" data-aos-duration="1400">
+              <span id="msft">Microsoft </span><br /><span id="std_ch"
+                >Student Chapter</span
+              >
+            </div>
+          </div>
         </h1>
       </div>
     </section>
@@ -98,7 +104,10 @@
                 <div class="col-md-5 order-2 order-md-1">
                    <div class="row" id="about-head-content">
                     <span class="iconify" data-icon="clarity:dot-circle-line" data-inline="false" style="margin-top: 0.7rem;"></span>  
-                    ABOUT US</div>
+                    <div data-aos="flip-right" data-aos-duration="800">
+                      ABOUT US
+                    </div>
+                    </div>
                     <div class="row" id="about-content">
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                     </div>
@@ -114,40 +123,17 @@
                 <div class="col-md-2"></div>
                 <div id="col-md-3">
                     <div id="know-about1">
-                    <span id="know-about">KNOW MORE</span>
+                     <span id="know-about">KNOW MORE</span>
                     </div>
                 </div>
-                <div class="col-md-2"></div>
+                <div class="col-md-1"></div>
                 <div class="col-md-5">
+                  <div data-aos="fade-up" data-aos-duration="1200">
                     <span id="about-head">ABOUT US</span>
+                  </div>
                 </div> 
             </div>
           </div>
-          <div class="col-md-5 order-1 order-md-2">
-            <div>
-              <img
-                id="about_img"
-                class="img-fluid"
-                src="./assets/pics/landing1.png"
-                alt="About pic"
-              />
-            </div>
-          </div>
-          <div class="col-md-1"></div>
-        </div>
-        <div class="row">
-          <div class="col-md-2"></div>
-          <div id="col-md-3">
-            <div id="know-about1">
-              <span id="know-about">KNOW MORE</span>
-            </div>
-          </div>
-          <div class="col-md-1"></div>
-          <div class="col-md-6">
-            <span id="about-head">ABOUT US</span>
-          </div>
-        </div>
-      </div>
       <!-- Event Section -->
       <div id="events">
         <div class="row" style="padding: 10vh 0vh 0vh 0vh;">
@@ -171,7 +157,9 @@
                 data-inline="false"
                 style="margin-top: 0.7rem;"
               ></span>
-              EVENTS
+              <div data-aos="flip-right" data-aos-duration="800">
+                 EVENTS
+              </div>
             </div>
             <div class="row" id="event-content">
               Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -189,16 +177,18 @@
           <div class="col-md-1"></div>
         </div>
         <div class="row">
-          <div class="col-md-6">
-            <span id="event-head">EVENTS</span>
+          <div class="col-md-6 order-4 order-md-1"> <!--order-2 order-md-1-->
+            <div data-aos="fade-up" data-aos-duration="1200">
+              <span id="event-head">EVENTS</span>
+            </div>
           </div>
-          <div class="col-md-1"></div>
-          <div class="col-md-3" id="event-more">
+          <div class="col-md-1 order-1 order-md-2"></div>
+          <div class="col-md-3 order-2 order-md-3" id="event-more"> <!--order-2 order-md-1 reverse--> 
             <div id="event-about1">
               <span id="event-about">KNOW MORE</span>
             </div>
           </div>
-          <div class="col-md-2"></div>
+          <div class="col-md-2 order-3 order-md-4"></div>
         </div>
       </div>
       <!-- Blank Section -->
@@ -226,5 +216,10 @@
     ></script>
     <!-- Adding external JS -->
     <script src="./assets/js/landing.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
