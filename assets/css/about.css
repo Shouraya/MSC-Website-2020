@@ -58,7 +58,7 @@ html{
 #navbarSupportedContent ul li a {
   color: white;
   text-decoration: none;
-  font-size: 5 15pxpx;
+  font-size: 5 15px;
   display: block;
   padding: 20px 20px;
   transition-duration: 0.6s;
@@ -324,19 +324,25 @@ html{
 }
 
 #sec{
-  text-align: center;
+  text-align: right;
   font-size: 1.5rem;
   border-right: 3px solid #000;
-  
 }
+
+/* #sec_txt, #head_txt, #core_txt {
+  border-right: 3px solid #000;
+  padding-right: 1rem;
+} */
 
 
 #head{
   text-align: center;
   font-size: 1.5rem;
-  /* margin-left: -2rem; */
+  /* margin-left: -1rem; */
   /* margin-right: -2rem;  */
   border-right: 3px solid #000;
+  /* padding-right: -1rem; */
+  /* margin: 0px -10px; */
 
 }
 
@@ -348,7 +354,7 @@ html{
 }
 
 #mem{
-  text-align: center;
+  text-align: left;
   font-size: 1.5rem;
   /* margin-left: -2rem; */
 }
@@ -406,6 +412,11 @@ html{
 
   #mentor-head{
     font-size: 3rem;
+    line-height: 69px;
+  }
+
+  #sec, #mem {
+    text-align: center;
   }
   
 }
@@ -436,6 +447,10 @@ html{
   }
   #mentor-head{
     font-size: 4rem;
+    line-height: 69px;
+  }
+  #sec, #mem {
+    text-align: center;
   }
 }
 
@@ -467,6 +482,10 @@ html{
   #mentor_img {
     height: 12rem;
     width: 11rem;
+  }
+
+  #mentor-head {
+    line-height: 80px;
   }
 
   #sec_txt, #head_txt, #core_txt{
@@ -537,7 +556,11 @@ html{
   }
 
   #mentor {
-    min-height: 55vh !important;
+    min-height: 50vh !important;
+  }
+
+  #mentor-head {
+    line-height: 80px;
   }
 
   #team {
