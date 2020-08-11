@@ -128,3 +128,23 @@
         margin-bottom: 30px;
     }
 }
+
+@media only screen and (min-width: 768px) and (max-width: 799px) {
+
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1099px) {
+    .our_team .social li a i {
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+    }
+}
+
+@media only screen and (min-width: 1100px) and (max-width: 1365px) { 
+    .our_team .social li a i {
+        width: 25px;
+        height: 25px;
+        line-height: 26px;
+    }
+}

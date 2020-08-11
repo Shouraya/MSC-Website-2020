@@ -182,6 +182,7 @@ html{
   padding-left: 10rem;
   letter-spacing: 2.5px;
   position: relative;
+  text-shadow: 5px 5px 5px black;
 }
 #about-head {
   font-size: 7rem;
@@ -239,6 +240,7 @@ html{
   color: #020202;
   margin-left: 1.5rem;
   position: relative;
+  padding-left: 1rem;
   border-left: 10px solid black;
 }
 #mentor-content {
@@ -249,7 +251,7 @@ html{
   margin-bottom: 3rem;
 }
 #mentor_img {
-  width: 13rem;
+  width: 14rem;
   height: 14rem;
   margin-top: 2rem;
   margin-left: 7rem;
@@ -403,7 +405,7 @@ html{
   }
 
   #mentor-head{
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
   
 }
@@ -432,6 +434,9 @@ html{
   #mentor_img{
     margin-left: 0rem;
   }
+  #mentor-head{
+    font-size: 4rem;
+  }
 }
 
 @media only screen and (max-width: 985px) {
@@ -450,11 +455,52 @@ html{
 
   #about-content{
     margin-top: 4rem;
+    padding-right: 2rem;
   }
 
   #about_img {
-    margin-top: -1.5rem;
+    margin-top: 2rem;
+    /* padding-right: 1rem; */
     margin-left: 2rem !important;
+  }
+
+  #mentor_img {
+    height: 12rem;
+    width: 11rem;
+  }
+
+  #sec_txt, #head_txt, #core_txt{
+    font-size: 0.95rem;  
+  }
+
+  #mem_txt {
+    font-size: 0.8rem;
+  }
+
+  #sec:focus #sec_txt{
+    font-size: 1.1rem;
+  }
+  
+  #head:focus #head_txt{
+    font-size: 1.1rem;
+  }
+  #core:focus #core_txt{
+    font-size: 1.1rem;
+  }
+  #mem:focus #mem_txt{
+    font-size: 0.85rem;
+  }
+
+  #mentor {
+    min-height: 55vh !important;
+  }
+
+  #team {
+    height: 62vh !important;
+  }
+
+  #head_div, #core_div, #mem_div{
+    height: 48vh;
   }
 }
 
@@ -515,7 +561,7 @@ html{
   }
 }
 
-@media only screen and (max-width:1023px){
+@media only screen and (max-width:1024px){
 	#about:before, #mentor:before, #mentor:after, #team:before, #team:after{
 		border: 0;
 	}
