@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
 }
+
 i {
   margin-right: 10px;
 }
@@ -227,7 +228,7 @@ html{
   position: absolute;
 }
 #mentor {
-  min-height: 30vh;
+ min-height: 70vh;
   background: #ddc805;
   position: relative;
 }
@@ -263,6 +264,119 @@ html{
   color: #020202;
   /* background-color: red !; */
 }
+
+#team {
+  height: 114vh;
+  background: white;
+  position: relative;
+}
+
+#team:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-top: 4.95rem solid #ddc805;
+  border-left: 4.95rem solid white;
+  width: 0;
+}
+
+#team:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-top: 4.95rem solid white;
+  border-left: 4.95rem solid #020202;
+  width: 0;
+}
+
+#team_head{
+  font-size: 5rem;
+  border-bottom: 5px solid black;
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  text-align: center;
+}
+
+/* SCROLL BAR */
+.content-section {
+  overflow: auto;
+}
+
+
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  height: 80px;
+  width: 50px;
+  /* outline: black; */
+  background-color: rgba(0, 0, 0, 0.3);
+  background-size: 100%, 100%;
+  /* border-radius: 50%; */
+  /* border: 1px solid black; */
+}
+
+.controls-top a {
+  text-decoration: none !important;
+  color: #020202;
+}
+
+#sec{
+  text-align: center;
+  font-size: 1.5rem;
+  border-right: 3px solid #000;
+  
+}
+
+
+#head{
+  text-align: center;
+  font-size: 1.5rem;
+  /* margin-left: -2rem; */
+  /* margin-right: -2rem;  */
+  border-right: 3px solid #000;
+
+}
+
+#core{
+  text-align: center;
+  font-size: 1.5rem;
+  border-right: 3px solid #000;
+
+}
+
+#mem{
+  text-align: center;
+  font-size: 1.5rem;
+  /* margin-left: -2rem; */
+}
+
+#sec:focus #sec_txt{
+  padding-bottom: 0.3rem;;
+  border-bottom: 4px solid #ddc805;
+  font-size: 1.8rem;
+}
+
+#head:focus #head_txt{
+  padding-bottom: 0.3rem;;
+  border-bottom: 4px solid #ddc805;
+  font-size: 1.8rem;
+}
+#core:focus #core_txt{
+  padding-bottom: 0.3rem;;
+  border-bottom: 4px solid #ddc805;
+  font-size: 1.8rem;
+}
+#mem:focus #mem_txt{
+  padding-bottom: 0.3rem;;
+  border-bottom: 4px solid #ddc805;
+  font-size: 1.8rem;
+}
+
+#head_div, #core_div, #mem_div{
+  height: 90vh;
+}
+
 
 @media only screen and (max-width: 280px) {
   #about-head-content{
@@ -358,6 +472,35 @@ html{
     margin-top: -3rem;
   }
 
+  #mem_txt, #sec_txt, #head_txt, #core_txt{
+    font-size: 1rem;  
+  }
+
+  #sec:focus #sec_txt{
+    font-size: 1.3rem;
+  }
+  
+  #head:focus #head_txt{
+    font-size: 1.3rem;
+  }
+  #core:focus #core_txt{
+    font-size: 1.3rem;
+  }
+  #mem:focus #mem_txt{
+    font-size: 1.1rem;
+  }
+
+  #mentor {
+    min-height: 55vh !important;
+  }
+
+  #team {
+    height: 62vh !important;
+  }
+
+  #head_div, #core_div, #mem_div{
+    height: 48vh;
+  }
 }
 
 @media only screen and (min-width: 1100px) and (max-width: 1400px) {
@@ -366,4 +509,15 @@ html{
     font-size: 4.5rem;
     margin-left: -2rem;
   }
+
+  #mem:focus #mem_txt{
+    font-size: 1.6rem;
+  }
 }
+
+@media only screen and (max-width:1023px){
+	#about:before, #mentor:before, #mentor:after, #team:before, #team:after{
+		border: 0;
+	}
+}
+
