@@ -148,7 +148,11 @@
     }
 
     .our_team .title {
-        font-size: 12px;
+        font-size: 10px;
+    }
+
+    .our_team .post{
+        display: none;
     }
 }
 
@@ -162,6 +166,10 @@
     .our_team .team-content::before {
         border-top: 0;
     }
+
+    /* .our_team .post{
+        display: none;
+    } */
 }
 
 @media only screen and (min-width: 1100px) and (max-width: 1365px) { 
