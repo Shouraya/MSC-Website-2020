@@ -428,7 +428,7 @@ margin: 5px 3.5px;
 }
 /* Contact Section */
 #contact {
-    height: 40vh;
+    min-height: 40vh;
     background: #020202;
 	position: relative;
 	text-align: center;
@@ -446,10 +446,44 @@ margin: 5px 3.5px;
 
 #ContactUs{
 	font-family: 'Poppins', sans-serif;
-	font-size: 45px;
+	font-size: 2.8rem;
 	font-weight: bolder;
 	color: white;
-	letter-spacing: 15px;
+	letter-spacing: 0.8rem;
+	border-bottom: 1px solid white;
+}
+
+.button_contact {
+  background-color: #2b2728; /* Green */
+  border: none;
+  color: white;
+  padding: 1rem 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  margin: 0.25rem 0.125rem;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+.contact_link {
+	width: 5rem;
+}
+/* Made with Love */
+#love {
+	height: 3rem;
+	background-color: #2b2728;
+}
+
+#text_love {
+	font-family: 'Dancing Script', cursive;
+	color: white;
+	font-size: 2rem;
+}
+
+#text-red {
+	color: #c02739;
 }
 
 /* All Section plane border below 1023px */
