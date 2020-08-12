@@ -470,6 +470,12 @@ margin: 5px 3.5px;
 .contact_link {
 	width: 5rem;
 }
+
+.contact_link:hover {
+	-ms-transform: scale(1.2); /* IE 9 */
+	-webkit-transform: scale(1.2); /* Safari 3-8 */
+	transform: scale(1.2);
+}
 /* Made with Love */
 #love {
 	height: 3rem;

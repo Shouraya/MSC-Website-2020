@@ -644,7 +644,11 @@ font-family: 'Dancing Script', cursive;
 color: white;
 font-size: 2rem;
 }
-
+.contact_link:hover {
+	-ms-transform: scale(1.2); /* IE 9 */
+	-webkit-transform: scale(1.2); /* Safari 3-8 */
+	transform: scale(1.2);
+}
 #text-red {
 color: #c02739;
 }
