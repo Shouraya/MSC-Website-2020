@@ -231,14 +231,14 @@ body{
 
 
 #know-about1{
-	width: 12.3rem;
-	height: 3.5rem;
+	width: 12.6rem;
+	height: 2.5rem;
 	border: 2px solid #fc352b;
 	text-align: center;
 }
 
 #know-about{
-padding: 0.8rem 1rem 2rem 1.2rem;
+padding: 1rem 1rem 1rem 1.2rem;
 border: 2px solid #fc352b;
 color: #fff;
 text-align: center;
@@ -292,14 +292,14 @@ margin: 5px 3.5px;
 }
 
 #event-about1{
-	width: 12.3rem;
-	height: 3.5rem;
+	width: 12.6rem;
+	height: 2.5rem;
 	border: 2px solid #020202;
 	text-align: center;
 }
 
 #event-about{
-	padding: 0.8rem 1rem 2rem 1.2rem;
+	padding: 1rem 1rem 1rem 1.2rem;
 	border: 2px solid #020202;
 	color: #fff;
 	text-align: center;
@@ -320,31 +320,6 @@ margin: 5px 3.5px;
 	margin-bottom: 2rem;
 }
 
-#event {
-    height: 80vh;
-    background: white;
-    position: relative;
-}
-
-#event:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    border-top: 4.95rem solid #fc352b;
-    border-left: 4.95rem solid white;
-    width: 0;
-}
-
-#event:after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    border-top: 4.95rem solid white;
-    border-left: 4.95rem solid #020202;
-    width: 0;
-}
 #events {
     min-height: 80vh;
     background: #fc352b;
@@ -415,6 +390,106 @@ margin: 5px 3.5px;
 	100%{transform:rotateY(360deg);}
 }
 
+/* Image Section */
+#gallery {
+    height: 80vh;
+    background: #020202;
+    position: relative;
+}
+
+#gallery:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-top: 4.95rem solid #fc352b;
+    border-left: 4.95rem solid #020202;
+    width: 0;
+}
+
+#gallery:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-top: 4.95rem solid #020202;
+    border-left: 4.95rem solid white;
+    width: 0;
+}
+/* Sponsor Section */
+#sponsor {
+    height: 80vh;
+    background: white;
+    position: relative;
+}
+
+/* #sponsor:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-top: 4.95rem solid #020202;
+    border-right: 4.95rem solid blue;
+    width: 0;
+} */
+
+/* #sponsor:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-top: 4.95rem solid #020202;
+    border-right: 4.95rem solid blue;
+    width: 0;
+}  */
+
+/* Contact Section */
+#contact {
+    height: 40vh;
+    background: #020202;
+	position: relative;
+	text-align: center;
+}
+
+#contact:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-top: 4.95rem solid white;
+    border-left: 4.95rem solid black;
+    width: 0;
+}
+
+/* #gallery:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-top: 4.95rem solid #020202;
+    border-left: 4.95rem solid white;
+    width: 0;
+} */
+
+#ContactUs{
+	font-family: 'Poppins', sans-serif;
+	font-size: 45px;
+	font-weight: bolder;
+	color: white;
+	letter-spacing: 15px;
+}
+
+/* All Section plane border below 1023px */
+@media only screen and (max-width:1023px){
+	#about:before, 
+	#event:before, 
+	#event:after, 
+	#contact:before, 
+	#gallery:after, 
+	#gallery:before{
+		border: 0;
+	}
+}
 @media only screen and (min-width:700px) and (max-width:768px) {
 	.box-img {
 		height: 19rem;
@@ -456,12 +531,7 @@ margin: 5px 3.5px;
 		margin-left: 5vw;
 	}
 }
-/* About and Event section media query */
-@media only screen and (max-width:1023px){
-	#about:before, #event:before, #event:after{
-		border: 0;
-	}
-}
+
 @media only screen and (min-width:842px) and (max-width: 1228px) {
 	#about-head {
 		font-size: 4rem;
@@ -483,21 +553,6 @@ margin: 5px 3.5px;
 /* Favicon Icon */
 i {
 	margin-right: 10px;
-}
-/* Contact Section */
-#contact {
-    height: 40vh;
-    background: #020202;
-	position: relative;
-	text-align: center;
-}
-
-#ContactUs{
-	font-family: 'Poppins', sans-serif;
-	font-size: 45px;
-	font-weight: bolder;
-	color: white;
-	letter-spacing: 15px;
 }
 
 /* Additional Media query for responsiveness */
