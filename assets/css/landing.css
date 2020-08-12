@@ -432,6 +432,7 @@ margin: 5px 3.5px;
     background: #020202;
 	position: relative;
 	text-align: center;
+	padding-top: 1rem;
 }
 
 #contact:before {
