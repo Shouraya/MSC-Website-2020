@@ -521,6 +521,10 @@ html{
   #head_div, #core_div, #mem_div{
     height: 48vh;
   }
+
+  #head {
+    margin-left: -0.8rem;
+  }
 }
 
 @media only screen and (min-width: 800px) and (max-width: 1099px) {
