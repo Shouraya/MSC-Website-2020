@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+* {
+  margin: 0;
+  padding: 0;
+}
+i {
+  margin-right: 10px;
+}
+#logo {
+  height: 2.8rem;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  /* max-height: 1000px; */
+  /* overflow: hidden; */
+  background-color: #2a2725;
+}
+
+/* .row {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+} */
+/*----------multi-level-accordian-menu------------*/
+.navbar-logo {
+  padding: 5px 15px;
+  color: #fff;
+}
+.navbar-mainbg {
+  background-color: black;
+  padding: 0px;
+}
+#navbarSupportedContent {
+  overflow: hidden;
+  position: relative;
+}
+#navbarSupportedContent ul {
+  padding: 0px;
+  margin: 0px;
+}
+#navbarSupportedContent ul li a i {
+  margin-right: 10px;
+}
+#navbarSupportedContent li {
+  list-style-type: none;
+  float: left;
+}
+#navbarSupportedContent ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 5 15pxpx;
+  display: block;
+  padding: 20px 20px;
+  transition-duration: 0.6s;
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  position: relative;
+}
+#navbarSupportedContent > ul > li.active > a {
+  color: black;
+  background-color: transparent;
+  transition: all 0.7s;
+}
+#navbarSupportedContent a:not(:only-child):after {
+  content: "\f105";
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  font-size: 14px;
+  font-family: "Font Awesome 5 Free";
+  display: inline-block;
+  padding-right: 3px;
+  vertical-align: middle;
+  font-weight: 900;
+  transition: 0.5s;
+}
+#navbarSupportedContent .active > a:not(:only-child):after {
+  transform: rotate(90deg);
+}
+.hori-selector {
+  display: inline-block;
+  position: absolute;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  transition-duration: 0.6s;
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  background-color: #fff;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  margin-top: 10px;
+}
+.hori-selector .right,
+.hori-selector .left {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: #fff;
+  bottom: 10px;
+}
+.hori-selector .right {
+  right: -25px;
+}
+.hori-selector .left {
+  left: -25px;
+}
+.hori-selector .right:before,
+.hori-selector .left:before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: black;
+}
+.hori-selector .right:before {
+  bottom: 0;
+  right: -25px;
+}
+.hori-selector .left:before {
+  bottom: 0;
+  left: -25px;
+}
+
+@media (max-width: 991px) {
+  #navbarSupportedContent ul li a {
+    padding: 12px 30px;
+  }
+  .hori-selector {
+    margin-top: 0px;
+    margin-left: 10px;
+    border-radius: 0;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+  }
+  .hori-selector .left,
+  .hori-selector .right {
+    right: 10px;
+  }
+  .hori-selector .left {
+    top: -25px;
+    left: auto;
+  }
+  .hori-selector .right {
+    bottom: -25px;
+  }
+  .hori-selector .left:before {
+    left: -25px;
+    top: -25px;
+  }
+  .hori-selector .right:before {
+    bottom: -25px;
+    left: -25px;
+  }
+}
+/* .container .box {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  margin: 10px;
+  background: #ff0;
+  display: inline-block;
+  box-sizing: border-box;
+}  */
+.container .row .column .box {
+  width: 250px;
+  height: 160px;
+  border: 3px solid #ffffff;
+}
+.container .row .column .box-3 {
+  width: 250px;
+  height: 140px;
+  border: 3px solid #ffffff;
+}
+.container .row .column .box-4 {
+  width: 250px;
+  height: 180px;
+  border: 3px solid #ffffff;
+}
+.container .row .column .box-2 {
+  width: 250px;
+  height: 230px;
+  border: 3px solid #ffffff;
+}
+.container .row .column-2 .row .column .box {
+  width: 230px;
+  height: 180px;
+  /* border: 3px solid #ffffff; */
+}
+.container .row .column-2 .box-1 {
+  width: 490px;
+  height: 395px;
+  border: 3px solid #ffffff;
+}
+/* .container .row .column-2 .box {
+  width: 270px;
+  height: 250px;
+} */
+.container .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create four equal columns that sits next to each other */
+.container .row .column {
+  flex: 18%;
+}
+.container .row .column-2 {
+  flex: 32%;
+}
+
+.container .row .column img {
+  margin-top: 14px;
+  /* vertical-align: middle; */
+  width: 100%;
+}
+.container .row .column-2 img {
+  margin-top: 14px;
+  /* vertical-align: middle; */
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .container .column {
+    flex: 10%;
+    max-width: 10%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .container .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
