@@ -418,31 +418,14 @@ margin: 5px 3.5px;
 }
 /* Sponsor Section */
 #sponsor {
-    height: 80vh;
+    min-height: 30vh;
     background: white;
     position: relative;
 }
 
-/* #sponsor:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    border-top: 4.95rem solid #020202;
-    border-right: 4.95rem solid blue;
-    width: 0;
-} */
-
-/* #sponsor:after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    border-top: 4.95rem solid #020202;
-    border-right: 4.95rem solid blue;
-    width: 0;
-}  */
-
+.abc {
+	padding: 10vh 0 10vh 0;
+}
 /* Contact Section */
 #contact {
     height: 40vh;
@@ -460,16 +443,6 @@ margin: 5px 3.5px;
     border-left: 4.95rem solid black;
     width: 0;
 }
-
-/* #gallery:after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    border-top: 4.95rem solid #020202;
-    border-left: 4.95rem solid white;
-    width: 0;
-} */
 
 #ContactUs{
 	font-family: 'Poppins', sans-serif;
