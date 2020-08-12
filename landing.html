@@ -18,12 +18,11 @@
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <!-- Google Font -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Great+Vibes&family=Poppins:wght@700&display=swap" rel="stylesheet">
     <!-- AOS CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Slick CSS -->
+    <link rel="stylesheet" href="./assets/css/infinite-slider.css" />
     <title>Microsoft Student Chapter</title>
   </head>
   <body>
@@ -121,7 +120,7 @@
             </div>
             <div class="row" >
                 <div class="col-md-2"></div>
-                <div id="col-md-3">
+                <div id="col-md-3" style="padding-left: 1rem;">
                     <div id="know-about1">
                      <span id="know-about">KNOW MORE</span>
                     </div>
@@ -199,12 +198,13 @@
           <div class="col-md-1 order-3 order-md-4"></div>
         </div>
         <div class="row">
-          <div class="col-md-6 order-4 order-md-1"> 
+          <div class="col-md-1 order-1 order-md-1"></div>
+          <div class="col-md-6 order-4 order-md-2"> 
             <div data-aos="fade-up" data-aos-duration="1200">
               <span id="event-head">EVENTS</span>
             </div>
           </div>
-          <div class="col-md-1 order-1 order-md-2"></div>
+         
           <div class="col-md-3 order-2 order-md-3" id="event-more"> 
             <div id="event-about1">
               <span id="event-about">KNOW MORE</span>
@@ -213,11 +213,60 @@
           <div class="col-md-2 order-3 order-md-4"></div>
         </div>
       </div>
-      <!-- Blank Section -->
-      <div id="event"></div>
+      <!-- Gallery Section -->
+      <div id="gallery"></div>
+      <!-- OUR PAST SPONSOR Section -->
+      <div id="sponsor">
+        <div class="container abc">
+          <div class="logos slider">
+            <div class="item"><img src="./assets/pics/Sponsors/balsamiq.png" alt="Balsamiq"></div>
+            <div class="item"><img src="./assets/pics/Sponsors/cb.png" alt="Coding Blocks"></div>
+            <div class="item"><img src="./assets/pics/Sponsors/creativeTim.png" alt="Creative Tim"></div>
+            <div class="item"><img src="./assets/pics/Sponsors/digitalOcean.png" alt="Digital Ocean"></div>
+            <div class="item"><img src="./assets/pics/Sponsors/fab.png" alt="Fab Hotel"></div>
+            <!-- <div class="item"><img src="./assets/pics/Sponsors/balsamiq.png alt=""></div> -->
+            <div class="item"><img src="./assets/pics/Sponsors/gg.png" alt="Guerilla Gaming"></div>
+            <div class="item"><img src="./assets/pics/Sponsors/github.png" alt="Github"></div>
+            <div class="item"><img src="./assets/pics/Sponsors/learnCodeOnline.png" alt="Learn Code Online"></div>
+            <div class="item"><img src="./assets/pics/Sponsors/paytm.png" alt="Paytm"></div>
+            <div class="item"><img src="./assets/pics/Sponsors/vanfly.png" alt="Vanfly"></div>
+            <div class="item"><img src="./assets/pics/Sponsors/wolfram.png" alt="Wolfram Language"></div>
+            <div class="item"><img src="./assets/pics/Sponsors/gfg.png" alt="Geeks for Geeks"></div>
+          </div>
+        </div>
+      </div>
       <!-- Contact Us section -->
       <div id="contact">
         <span id="ContactUs">CONTACT US</span>
+        <div style="height: 2rem;"></div>
+        <div class="row">
+          <div class="col-sm-1 col-md-2"></div>
+          <div class="col-sm-4 col-md-3">
+            <!-- Location -->
+            <div class="text-center">
+              <img src="./assets/pics/Contact Us/location.png" alt="Locate Us"><br>
+              <button class="button_contact">Thapar, Punjab - 147004</button>
+            </div>
+          </div>
+          <div class="col-sm-2"></div>
+          <div class="col-sm-4 col-md-3">
+            <div class="text-center">
+              <img src="./assets/pics/Contact Us/phone.png" alt="Contact Us" style="padding-bottom: 0.75rem;"><br>
+              <button class="button_contact">Aryan : +91 99976 30003 </button>
+            </div>
+          </div>
+          <div class="col-sm-1 col-md-2"></div>
+        </div>
+        <div style="height: 1vh;"></div>
+        <div class="text-center">
+          <a href=" https://www.facebook.com/msctiet/"><img src="./assets/pics/Contact Us/fb.png" alt="Facebook" class="contact_link"></a> 
+          <a href="https://github.com/MicrosoftStudentChapter"><img src="./assets/pics/Contact Us/github-04.png" alt="Twitter" class="contact_link"></a>
+          <a href="https://instagram.com/msc_tiet?igshid=bbv9mjjkx4h"><img src="./assets/pics/Contact Us/insta.png" alt="Instagram" class="contact_link"></a>
+        </div>
+        <div style="height: 2vh;"></div>
+      </div>
+      <div id="love">
+        <div class="text-center" id="text_love">Made with <i class="fa fa-heart" id="text-red"></i>by Team MSC</div>
       </div>
     </section>
     <!-- Adding JS and jQuery File -->
@@ -236,12 +285,14 @@
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"
     ></script>
+    <!-- Slick Carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
     <!-- Adding external JS -->
     <script src="./assets/js/landing.js"></script>
     <!-- AOS JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
-    </script>
+    </script>      
   </body>
 </html>
