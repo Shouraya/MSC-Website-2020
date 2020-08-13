@@ -432,7 +432,7 @@ margin: 5px 3.5px;
     background: #020202;
 	position: relative;
 	text-align: center;
-	padding-top: 1rem;
+	padding-top: 2rem;
 }
 
 #contact:before {
@@ -492,6 +492,12 @@ margin: 5px 3.5px;
 #text-red {
 	color: #c02739;
 }
+
+.pic_contact img {
+	height: 58px;
+	width: 30px;
+	cursor: pointer;
+  }
 
 /* All Section plane border below 1023px */
 @media only screen and (max-width:1023px){
