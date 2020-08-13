@@ -457,6 +457,9 @@ margin: 5px 3.5px;
 	#about-head {
 		float: right;
 	}
+	#responsive-space {
+		height: 4rem;
+	}
 }
 @media only screen and (min-width:842px) and (max-width: 1228px) {
 	#about-head {
