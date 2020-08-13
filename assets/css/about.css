@@ -661,7 +661,17 @@ color: #c02739;
 }
 
 @media only screen and (max-width:1024px){
-	#about:before, #mentor:before, #mentor:after, #team:before, #team:after, #contact:before{
+  #about:before, 
+  #mentor:before, 
+  #mentor:after, 
+  #team:before, 
+  #team:after, 
+  #contact:before{
 		border: 0;
+	}
+}
+@media only screen and (max-width: 768px) {
+	#ContactUs {
+		font-size: 1.8rem;
 	}
 }

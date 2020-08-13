@@ -334,4 +334,8 @@ color: #c02739;
   }
 }
 
-
+@media only screen and (max-width: 768px) {
+	#ContactUs {
+		font-size: 1.8rem;
+	}
+}

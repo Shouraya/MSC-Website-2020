@@ -460,6 +460,12 @@ margin: 5px 3.5px;
 	#responsive-space {
 		height: 4rem;
 	}
+	#Sponsors {
+		font-size: 1.8rem;
+	}
+	#ContactUs {
+		font-size: 1.8rem;
+	}
 }
 @media only screen and (min-width:842px) and (max-width: 1228px) {
 	#about-head {
