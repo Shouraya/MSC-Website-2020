@@ -255,7 +255,7 @@ body {
   background: #020202;
 position: relative;
 text-align: center;
-padding-top: 1rem;
+padding-top: 2rem;
 }
 
 #ContactUs{
@@ -303,6 +303,12 @@ font-size: 2rem;
 }
 #text-red {
 color: #c02739;
+}
+
+.pic_contact img{
+  height: 58px;
+  width: 30px;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 767px) {
