@@ -323,104 +323,48 @@ margin: 5px 3.5px;
 #events {
     min-height: 80vh;
     background: #fc352b;
-    position: relative;
-}
-/* Event Section Box Rotation */
-.rotation-box {
-	width: 12rem;
-	height: 12rem;
-	/* margin: 2rem auto; */
-	perspective: 8rem;
+	position: relative;
+	z-index: 10;
 }
 
-.single-rb {
-	width: 12rem;
-	animation: rotate 15s linear infinite;
-	transform-style: preserve-3d;
-	margin-top: 5rem;
-	margin-left: 3rem;
-	
+
+/* Sponsor Section */
+#sponsor {
+    min-height: 30vh;
+    background: white;
+	position: relative;
+	text-align: center;
+	padding-top: 2rem;
 }
 
-.single-rb img {
-	height: 12rem;
-	width: 12rem;
+#Sponsors{
+	font-family: 'Poppins', sans-serif;
+	font-size: 2.8rem;
+	font-weight: bolder;
+	color: #020202;
+	letter-spacing: 0.5rem;
+	border-bottom: 1px solid #020202;
 }
 
-.single-rb div {
-	position: absolute;
-	height: 12rem;
-	width: 12rem;
-}
 
-.front-side {
-	transform: translateZ(5.3rem);
-}
-.back-side {
-	transform: rotateY(180deg) 
-	translateZ(6.67rem);
-}
-
-.left-side {
-	transform: rotateY(-90deg) 
-	translateX(-6.67rem);
-	transform-origin:left;
-}
-
-.right-side {
-	transform: rotateY(90deg) 
-	translateX(6.67rem);
-	transform-origin:right;
-}
-
-.top-side {
-	transform: rotateX(-90deg) 
-	translateX(-6.67rem);
-	transform-origin:top;
-}
-
-.bottom-side {
-	transform: rotateX(90deg) 
-	translateX(6.67rem);
-	transform-origin:bottom;
-}
-
-@keyframes rotate {
-	0%{tranform:rotateY(0);}
-	100%{transform:rotateY(360deg);}
-}
-
-/* Image Section */
-#gallery {
-    height: 80vh;
-    background: #020202;
-    position: relative;
-}
-
-#gallery:before {
+#sponsor:before {
     content: '';
     position: absolute;
     top: 0;
     right: 0;
     border-top: 4.95rem solid #fc352b;
-    border-left: 4.95rem solid #020202;
-    width: 0;
-}
-
-#gallery:after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    border-top: 4.95rem solid #020202;
     border-left: 4.95rem solid white;
     width: 0;
 }
-/* Sponsor Section */
-#sponsor {
-    min-height: 30vh;
-    background: white;
-    position: relative;
+
+#sponsor:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+	left: 0;
+    border-top: 4.95rem solid white;
+    border-left: 4.95rem solid #020202;
+    width: 0;
 }
 
 .abc {
@@ -435,15 +379,6 @@ margin: 5px 3.5px;
 	padding-top: 2rem;
 }
 
-#contact:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    border-top: 4.95rem solid white;
-    border-left: 4.95rem solid black;
-    width: 0;
-}
 
 #ContactUs{
 	font-family: 'Poppins', sans-serif;
@@ -458,7 +393,7 @@ margin: 5px 3.5px;
   background-color: #2b2728; /* Green */
   border: none;
   color: white;
-  padding: 1rem 1.5rem;
+  padding: 0.8rem 1rem;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -504,54 +439,28 @@ margin: 5px 3.5px;
 	#about:before, 
 	#event:before, 
 	#event:after, 
-	#contact:before, 
-	#gallery:after, 
-	#gallery:before{
+	#contact:before,
+	#sponsor:before,
+	#sponsor:after {
 		border: 0;
 	}
 }
-@media only screen and (min-width:700px) and (max-width:768px) {
-	.box-img {
-		height: 19rem;
-		margin-left: 30vw;
+
+.div-sec {
+	padding-top: 10vh;
+}
+@media only screen and (max-width: 768px) {
+	.div-sec {
+		padding-top: 0;
+	}
+	#event-head,
+	#about-head {
+		float: right;
+	}
+	#responsive-space {
+		height: 4rem;
 	}
 }
-
-@media only screen and (min-width:620px) and (max-width:700px) {
-	.box-img {
-		height: 17rem;
-		margin-left: 27vw;
-	}
-}
-
-@media only screen and (min-width:540px) and (max-width:620px) {
-	.box-img {
-		height: 17rem;
-		margin-left: 24vw;
-	}
-}
-
-@media only screen and (min-width:460px) and (max-width:540px) {
-	.box-img {
-		height: 17rem;
-		margin-left: 19vw;
-	}
-}
-
-@media only screen and (min-width:380px) and (max-width:460px) {
-	.box-img {
-		height: 17rem;
-		margin-left: 13vw;
-	}
-}
-
-@media only screen and (min-width:300px) and (max-width:380px) {
-	.box-img {
-		height: 17rem;
-		margin-left: 5vw;
-	}
-}
-
 @media only screen and (min-width:842px) and (max-width: 1228px) {
 	#about-head {
 		font-size: 4rem;
