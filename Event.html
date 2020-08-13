@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MSC</title>
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous"
+  />
+  <!-- Font Awesome -->
+  <link
+  rel="stylesheet"
+  href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+/>
+<!-- Google Font -->
+<link
+  href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"
+  rel="stylesheet"
+/>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/Event.css">
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  crossorigin="anonymous"
+></script>
+  
+  <style>
+ 
+    body{    
+        font-family: 'Roboto Condensed', sans-serif;
+        overflow-x: hidden;
+        
+    }
+            /* body { background-image: url(ur.jpg);} */
+            h1 { margin:150px auto 30px auto; text-align:center; color:#fff;}
+       
+                .hi-slide { position: relative; width: 1100px; height: 500px; margin: 0px auto 0; padding: 13rem 0 0 12rem;}
+                
+    .hi-slide .hi-next,
+    .hi-slide .hi-prev 
+                { position: absolute;
+                  top: 50%; 
+                  width: 40px;
+                  height: 40px; 
+                  margin-top: -20px;     
+                    border-radius: 50px; 
+                     
+                    
+                  line-height: 40px;
+                  text-align: center; 
+                  cursor: pointer;
+                  background-color: #fff; 
+                  color: black;               
+                  transition: all 0.6s;
+                  font-size: 20px; 
+                    font-weight: bold;
+                }
+               .hi-slide .hi-next:hover, 
+                .hi-slide .hi-prev:hover 
+                {
+                opacity: 1; 
+                background-color: #fff;  
+                }
+                
+               .hi-slide .hi-prev { left: -60px; }
+                
+        .hi-slide .hi-prev::before { content: '<'; }
+        .hi-slide .hi-next { right: -60px; }
+        .hi-slide .hi-next::before { content: '>'; }
+        
+                .hi-slide > ul
+                        { 
+                            list-style: none; 
+                            position: relative;
+                            margin: 0;
+                            padding: 0;
+                }
+                
+                
+            .hi-slide > ul > li {
+                overflow: hidden; 
+                position: absolute; 
+                z-index: 0; 
+                left: 377px;
+                top: 146px; 
+                width: 0; 
+                height: 0; 
+                margin: 0; 
+                padding: 0;              
+                background-color: #333; 
+                cursor: pointer;
+                border-radius: 23px 23px 0 0;
+               box-shadow: -3px 5px 5px 0 black; }
+                
+            .hi-slide > ul > li > img { width: 100%; height: 100%; background-position: center;}
+              
+            .hi-slide > ul > li:hover {
+              transform: scale(1.2);
+            }
+     
+    
+        </style>
+<script type="text/javascript">
+  $(document).ready(function(){
+    // alert();
+      $("#event_1").click(function(){
+        alert("hi");
+        $("#event_1c").css('display','none');
+        $("#event_2c").css('display','block');
+        $("#event_3c").css('display','none');
+        $("#event_4c").css('display','none');
+        $("#event_5c").css('display','none');
+        $("#event_6c").css('display','none');
+      });
+  });
+</script>
+
+</head>
+<body>
+     <!-- Navbar -->
+     <section>
+      <nav class="navbar navbar-expand-lg navbar-mainbg fixed-top">
+        <a class="navbar-brand navbar-logo" href="#"
+          ><img src="./assets/pics/msc_logo.png" alt="Logo" id="logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa fa-bars text-white"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <div class="hori-selector">
+              <div class="left"></div>
+              <div class="right"></div>
+            </div>
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:void(0);">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="javascript:void(0);">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:void(0);">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:void(0);">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:void(0);">Why Sponsor Us?</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </section>
+
+    <!-- Event Head Section -->
+    <section>
+        <div id="events" style="background-image: url('./assets/pics/Events/events_bg.png');">
+            <div class="row">
+                <div class="col-md-7" id="heading">
+                    <span>EVENTS</span>
+                </div>
+            </div>
+        </div>
+    </section>
+   <!-- Event Images Section -->
+    <section>
+        <div class="row"  id="pics"">
+          <div class="slide hi-slide">
+            <div class="hi-prev "></div>
+            <div class="hi-next "></div>
+            <ul style="margin-top: -7.2rem;  padding-top: 5rem;">
+              <li><img src="./assets/pics/card temp-03 (1).png" alt="Img 2" id="event_1" /></li>
+              <li id="event_2"><img src="./assets/pics/card temp-03 (1).png" alt="Img 2" /></li>
+              <li id="event_3"><img src="./assets/pics/card temp-03 (1).png" alt="Img 2" /></li>
+              <li id="event_4"><img src="./assets/pics/card temp-03 (1).png" alt="Img 2" /></li>
+              <li id="event_5"><img src="./assets/pics/card temp-03 (1).png" alt="Img 2" /></li>
+              <li id="event_6"><img src="./assets/pics/card temp-03 (1).png " alt="Img 2" /></li>
+              <li id="event_7"><img src="./assets/pics/card temp-03 (1).png" alt="Img 2" /></li>
+              <li id="event_8"><img src="./assets/pics/card temp-03 (1).png" alt="Img 2" /></li>
+            </ul>
+          </div>
+        </div>
+    </section> 
+
+    
+
+    <!-- event name -->
+    <section id="event_1c">
+        <div id="event_name">
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-7">
+                    <div class="row" id="event_head">EVENT 1</div>
+                    <div id="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+                      enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                      aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
+                      in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                      sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                      mollit anim id est laborum.Lorem ipsum dolor <br> sit amet, consectetur
+                      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+                      magna aliqua. Vestibulum sed arcu non odio euismod lacinia at. Urna nunc
+                      id cursus metus aliquam eleifend mi in. Nibh praesent tristique magna sit
+                      amet purus gravida quis. Aliquam ut porttitor leo a. Mi eget mauris 
+                      pharetra et. Egestas sed tempus urna et pharetra pharetra. Nulla pharetra 
+                      diam sit amet nisl suscipit adipiscing. Pellentesque nec nam aliquam sem
+                      et tortor consequat id. Nunc lobortis mattis aliquam faucibus. Quam quisque
+                      id diam vel quam elementum</div>
+                </div>
+                <div class="col-md-3 mt-5">
+                  <img src="./assets/pics/card temp-03 (1).png" alt="" height="400px" width="90%">
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="event_2c" style="display: none;">
+      <div id="event_name">
+          <div class="row">
+              <div class="col-md-1"></div>
+              <div class="col-md-7">
+                  <div class="row" id="event_head">EVENT 2</div>
+                  <div id="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+                    enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
+                    in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                    mollit anim id est laborum.Lorem ipsum dolor <br> sit amet, consectetur
+                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+                    magna aliqua. Vestibulum sed arcu non odio euismod lacinia at. Urna nunc
+                    id cursus metus aliquam eleifend mi in. Nibh praesent tristique magna sit
+                    amet purus gravida quis. Aliquam ut porttitor leo a. Mi eget mauris 
+                    pharetra et. Egestas sed tempus urna et pharetra pharetra. Nulla pharetra 
+                    diam sit amet nisl suscipit adipiscing. Pellentesque nec nam aliquam sem
+                    et tortor consequat id. Nunc lobortis mattis aliquam faucibus. Quam quisque
+                    id diam vel quam elementum</div>
+              </div>
+              <div class="col-md-3 mt-5">
+                <img src="./card temp-03 (1).png" alt="" height="400px" width="100%">
+              </div>
+              <div class="col-md-1"></div>
+          </div>
+      </div>
+  </section>
+
+  <section id="event_3c" style="display: none;">
+    <div id="event_name">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-7">
+                <div class="row" id="event_head">EVENT 3</div>
+                <div id="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+                  enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
+                  in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                  sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                  mollit anim id est laborum.Lorem ipsum dolor <br> sit amet, consectetur
+                  adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+                  magna aliqua. Vestibulum sed arcu non odio euismod lacinia at. Urna nunc
+                  id cursus metus aliquam eleifend mi in. Nibh praesent tristique magna sit
+                  amet purus gravida quis. Aliquam ut porttitor leo a. Mi eget mauris 
+                  pharetra et. Egestas sed tempus urna et pharetra pharetra. Nulla pharetra 
+                  diam sit amet nisl suscipit adipiscing. Pellentesque nec nam aliquam sem
+                  et tortor consequat id. Nunc lobortis mattis aliquam faucibus. Quam quisque
+                  id diam vel quam elementum</div>
+            </div>
+            <div class="col-md-3 mt-5">
+              <img src="./card temp-03 (1).png" alt="" height="400px" width="100%">
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+    </div>
+</section>
+
+<section id="event_4c" style="display: none;">
+  <div id="event_name">
+      <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-7">
+              <div class="row" id="event_head">EVENT 4</div>
+              <div id="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
+                in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum.Lorem ipsum dolor <br> sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+                magna aliqua. Vestibulum sed arcu non odio euismod lacinia at. Urna nunc
+                id cursus metus aliquam eleifend mi in. Nibh praesent tristique magna sit
+                amet purus gravida quis. Aliquam ut porttitor leo a. Mi eget mauris 
+                pharetra et. Egestas sed tempus urna et pharetra pharetra. Nulla pharetra 
+                diam sit amet nisl suscipit adipiscing. Pellentesque nec nam aliquam sem
+                et tortor consequat id. Nunc lobortis mattis aliquam faucibus. Quam quisque
+                id diam vel quam elementum</div>
+          </div>
+          <div class="col-md-3 mt-5">
+            <img src="./card temp-03 (1).png" alt="" height="400px" width="100%">
+          </div>
+          <div class="col-md-1"></div>
+      </div>
+  </div>
+</section>
+
+
+<section id="event_5c" style="display: none;">
+  <div id="event_name">
+      <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-7">
+              <div class="row" id="event_head">EVENT 5</div>
+              <div id="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
+                in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum.Lorem ipsum dolor <br> sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+                magna aliqua. Vestibulum sed arcu non odio euismod lacinia at. Urna nunc
+                id cursus metus aliquam eleifend mi in. Nibh praesent tristique magna sit
+                amet purus gravida quis. Aliquam ut porttitor leo a. Mi eget mauris 
+                pharetra et. Egestas sed tempus urna et pharetra pharetra. Nulla pharetra 
+                diam sit amet nisl suscipit adipiscing. Pellentesque nec nam aliquam sem
+                et tortor consequat id. Nunc lobortis mattis aliquam faucibus. Quam quisque
+                id diam vel quam elementum</div>
+          </div>
+          <div class="col-md-3 mt-5">
+            <img src="./card temp-03 (1).png" alt="" height="400px" width="100%">
+          </div>
+          <div class="col-md-1"></div>
+      </div>
+  </div>
+</section>
+
+
+<section id="event_6c" style="display: none;">
+  <div id="event_name">
+      <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-7">
+              <div class="row" id="event_head">EVENT 6</div>
+              <div id="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
+                in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum.Lorem ipsum dolor <br> sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+                magna aliqua. Vestibulum sed arcu non odio euismod lacinia at. Urna nunc
+                id cursus metus aliquam eleifend mi in. Nibh praesent tristique magna sit
+                amet purus gravida quis. Aliquam ut porttitor leo a. Mi eget mauris 
+                pharetra et. Egestas sed tempus urna et pharetra pharetra. Nulla pharetra 
+                diam sit amet nisl suscipit adipiscing. Pellentesque nec nam aliquam sem
+                et tortor consequat id. Nunc lobortis mattis aliquam faucibus. Quam quisque
+                id diam vel quam elementum</div>
+          </div>
+          <div class="col-md-3 mt-5">
+            <img src="./card temp-03 (1).png" alt="" height="400px" width="100%">
+          </div>
+          <div class="col-md-1"></div>
+      </div>
+  </div>
+</section>
+    <!-- contact us -->
+    <section>
+      <div id="contact">
+        <span id="ContactUs">CONTACT US</span>
+        <div style="height: 2rem;"></div>
+        <div class="row">
+          <div class="col-sm-1 col-md-2"></div>
+          <div class="col-sm-4 col-md-3">
+            <!-- Location -->
+            <div class="text-center pic_contact">
+              <img src="./assets/pics/Contact Us/location.png" alt="Locate Us"><br>
+              <button class="button_contact">Thapar, Punjab - 147004</button>
+            </div>
+          </div>
+          <div class="col-sm-2"></div>
+          <div class="col-sm-4 col-md-3">
+            <div class="text-center pic_contact">
+              <img src="./assets/pics/Contact Us/phone.png" alt="Contact Us"><br>
+              <button class="button_contact">Aryan : +91 99976 30003 </button>
+            </div>
+          </div>
+          <div class="col-sm-1 col-md-2"></div>
+        </div>
+        <div style="height: 1vh;"></div>
+        <div class="text-center">
+          <a href=" https://www.facebook.com/msctiet/"><img src="./assets/pics/Contact Us/fb.png" alt="Facebook" class="contact_link"></a> 
+          <a href="https://github.com/MicrosoftStudentChapter"><img src="./assets/pics/Contact Us/github-04.png" alt="Twitter" class="contact_link"></a>
+          <a href="https://instagram.com/msc_tiet?igshid=bbv9mjjkx4h"><img src="./assets/pics/Contact Us/insta.png" alt="Instagram" class="contact_link"></a>
+        </div>
+        <div style="height: 2vh;"></div>
+      </div>
+      <div id="love">
+        <div class="text-center" id="text_love">Made with <i class="fa fa-heart" id="text-red"></i>by Team MSC</div>
+      </div>
+    </section>
+    <!-- Adding JS and jQuery File -->
+    
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <!-- <script type="text/javascript" src="./js/jquery.hislide.js" ></script> -->
+  <script type="text/javascript" src="./assets/js/jquery.hislide.js" ></script>
+  <script>
+    $('.slide').hiSlide();
+  </script>
+    
+    <script src="./assets/js/Event.js"></script>
+</body>
+</html>
