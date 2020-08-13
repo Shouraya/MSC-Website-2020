@@ -323,7 +323,8 @@ margin: 5px 3.5px;
 #events {
     min-height: 80vh;
     background: #fc352b;
-    position: relative;
+	position: relative;
+	z-index: 10;
 }
 /* Event Section Box Rotation */
 .rotation-box {
@@ -392,9 +393,10 @@ margin: 5px 3.5px;
 
 /* Image Section */
 #gallery {
-    height: 80vh;
+    min-height: 60vh;
     background: #020202;
-    position: relative;
+	position: relative;
+	padding-bottom: 1rem;
 }
 
 #gallery:before {
@@ -404,7 +406,8 @@ margin: 5px 3.5px;
     right: 0;
     border-top: 4.95rem solid #fc352b;
     border-left: 4.95rem solid #020202;
-    width: 0;
+	width: 0;
+	z-index: 10;
 }
 
 #gallery:after {
@@ -416,6 +419,69 @@ margin: 5px 3.5px;
     border-left: 4.95rem solid white;
     width: 0;
 }
+#gallery img {
+	margin: 1rem 0;
+}
+#img-1 {
+	width: 16rem;
+	height: 9rem;
+	-ms-transform: rotate(8deg); /* IE 9 */
+  	transform: rotate(8deg);
+}
+#img-2 {
+	width: 14rem;
+	height: 8rem;
+	-ms-transform: rotate(-15deg); /* IE 9 */
+  	transform: rotate(-15deg);
+}
+
+#img-3 {
+	width: 12rem;
+	height: 7rem;
+	-ms-transform: rotate(12deg); /* IE 9 */
+  	transform: rotate(12deg);
+}
+
+#img-4 {
+	width: 18rem;
+	height: 11rem;
+	-ms-transform: rotate(-4deg); /* IE 9 */
+  	transform: rotate(-4deg);
+}
+
+#img-5 {
+	width: 15rem;
+	height: 10rem;
+	-ms-transform: rotate(-10deg); /* IE 9 */
+  	transform: rotate(-10deg);
+}
+#img-6 {
+	width: 10rem;
+	height: 7rem;
+	-ms-transform: rotate(8deg); /* IE 9 */
+  	transform: rotate(8deg);
+}
+#img-7 {
+	width: 12rem;
+	height: 7rem;
+	-ms-transform: rotate(16deg); /* IE 9 */
+  	transform: rotate(16deg);
+}
+#img-8 {
+	width: 16rem;
+	height: 11rem;
+}
+#img-btn {
+	width: 10rem;
+	height: 5.3rem;
+}
+#img-btn:hover {
+	-ms-transform: scale(1.2); /* IE 9 */
+	-webkit-transform: scale(1.2); /* Safari 3-8 */
+	transform: scale(1.2);
+}
+
+
 /* Sponsor Section */
 #sponsor {
     min-height: 30vh;
