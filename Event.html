@@ -103,23 +103,7 @@
             .hi-slide > ul > li:hover {
               transform: scale(1.2);
             }
-     
-    
         </style>
-<script type="text/javascript">
-  $(document).ready(function(){
-    // alert();
-      $("#event_1").click(function(){
-        alert("hi");
-        $("#event_1c").css('display','none');
-        $("#event_2c").css('display','block');
-        $("#event_3c").css('display','none');
-        $("#event_4c").css('display','none');
-        $("#event_5c").css('display','none');
-        $("#event_6c").css('display','none');
-      });
-  });
-</script>
 
 </head>
 <body>
@@ -253,7 +237,7 @@
                     id diam vel quam elementum</div>
               </div>
               <div class="col-md-3 mt-5">
-                <img src="./card temp-03 (1).png" alt="" height="400px" width="100%">
+                <img src="./assets/pics/card temp-03 (1).png" alt="" height="400px" width="100%">
               </div>
               <div class="col-md-1"></div>
           </div>
@@ -283,7 +267,7 @@
                   id diam vel quam elementum</div>
             </div>
             <div class="col-md-3 mt-5">
-              <img src="./card temp-03 (1).png" alt="" height="400px" width="100%">
+              <img src="./assets/pics/card temp-03 (1).png" alt="" height="400px" width="100%">
             </div>
             <div class="col-md-1"></div>
         </div>
@@ -313,7 +297,7 @@
                 id diam vel quam elementum</div>
           </div>
           <div class="col-md-3 mt-5">
-            <img src="./card temp-03 (1).png" alt="" height="400px" width="100%">
+            <img src="./assets/pics/card temp-03 (1).png" alt="" height="400px" width="100%">
           </div>
           <div class="col-md-1"></div>
       </div>
@@ -344,7 +328,7 @@
                 id diam vel quam elementum</div>
           </div>
           <div class="col-md-3 mt-5">
-            <img src="./card temp-03 (1).png" alt="" height="400px" width="100%">
+            <img src="./assets/pics/card temp-03 (1).png" alt="" height="400px" width="100%">
           </div>
           <div class="col-md-1"></div>
       </div>
@@ -375,7 +359,7 @@
                 id diam vel quam elementum</div>
           </div>
           <div class="col-md-3 mt-5">
-            <img src="./card temp-03 (1).png" alt="" height="400px" width="100%">
+            <img src="./assets/pics/card temp-03 (1).png" alt="" height="400px" width="100%">
           </div>
           <div class="col-md-1"></div>
       </div>
@@ -435,6 +419,56 @@
   <script>
     $('.slide').hiSlide();
   </script>
+  <script>
+   document.querySelector("#event_1").addEventListener("click",function(){
+  document.getElementById("event_1c").style.display = "block";
+  document.getElementById("event_2c").style.display = "none";
+  document.getElementById("event_3c").style.display = "none";
+  document.getElementById("event_4c").style.display = "none";
+  document.getElementById("event_5c").style.display = "none";
+  document.getElementById("event_6c").style.display = "none";
+  })
+  document.querySelector("#event_2").addEventListener("click",function(){
+  document.getElementById("event_1c").style.display = "none";
+  document.getElementById("event_2c").style.display = "block";
+  document.getElementById("event_3c").style.display = "none";
+  document.getElementById("event_4c").style.display = "none";
+  document.getElementById("event_5c").style.display = "none";
+  document.getElementById("event_6c").style.display = "none";
+  })
+  document.querySelector("#event_3").addEventListener("click",function(){
+  document.getElementById("event_1c").style.display = "none";
+  document.getElementById("event_2c").style.display = "none";
+  document.getElementById("event_3c").style.display = "block";
+  document.getElementById("event_4c").style.display = "none";
+  document.getElementById("event_5c").style.display = "none";
+  document.getElementById("event_6c").style.display = "none";
+  })
+  document.querySelector("#event_4").addEventListener("click",function(){
+  document.getElementById("event_1c").style.display = "none";
+  document.getElementById("event_2c").style.display = "none";
+  document.getElementById("event_3c").style.display = "none";
+  document.getElementById("event_4c").style.display = "block";
+  document.getElementById("event_5c").style.display = "none";
+  document.getElementById("event_6c").style.display = "none";
+  })
+  document.querySelector("#event_5").addEventListener("click",function(){
+  document.getElementById("event_1c").style.display = "none";
+  document.getElementById("event_2c").style.display = "none";
+  document.getElementById("event_3c").style.display = "none";
+  document.getElementById("event_4c").style.display = "none";
+  document.getElementById("event_5c").style.display = "block";
+  document.getElementById("event_6c").style.display = "none";
+  })
+  document.querySelector("#event_6").addEventListener("click",function(){
+  document.getElementById("event_1c").style.display = "none";
+  document.getElementById("event_2c").style.display = "none";
+  document.getElementById("event_3c").style.display = "none";
+  document.getElementById("event_4c").style.display = "none";
+  document.getElementById("event_5c").style.display = "none";
+  document.getElementById("event_6c").style.display = "block";
+  })
+</script>
     
     <script src="./assets/js/Event.js"></script>
 </body>
