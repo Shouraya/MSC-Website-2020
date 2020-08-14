@@ -171,7 +171,7 @@ html{
 #about-content {
   text-align: justify;
   color: #fff;
-  margin-top: 10rem;
+  margin-top: 7rem;
 }
 #about-head-content {
   font-size: 6rem;
@@ -191,10 +191,10 @@ html{
   opacity: 0.3;
 }
 #about_img {
-  width: 17rem;
-  height: 22rem;
-  margin-top: -4rem;
-  margin-left: -18rem !important;
+  width: 26rem;
+  height: 18rem;
+  margin-top: -3rem;
+  margin-left: -12rem !important;
   margin-bottom: 4rem !important;
   z-index: -1;
 }
@@ -467,6 +467,7 @@ html{
   #about-head-content {
     font-size: 2.1rem;
     margin-left: -4rem;
+    margin-top: 1.2rem;
   }
 
   #about-content{
@@ -475,9 +476,9 @@ html{
   }
 
   #about_img {
-    margin-top: 2rem;
+    margin-top: 1rem;
     /* padding-right: 1rem; */
-    margin-left: 2rem !important;
+    margin-left: 0.5rem !important;
   }
 
   #mentor_img {
@@ -532,14 +533,17 @@ html{
   #about-head-content {
     font-size: 3.5rem;
     margin-left: -3rem;
+    padding-left: 0.6rem;
+    /* width: 200px; */
   }
 
   #about-content{
-    margin-top: 6rem;
+    margin-top: 5rem;
   }
 
   #about_img {
-    margin-top: -3rem;
+    margin-top: -2rem;
+    padding-left: 2rem;
   }
 
   #mem_txt, #sec_txt, #head_txt, #core_txt{
