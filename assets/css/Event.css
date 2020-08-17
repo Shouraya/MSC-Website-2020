@@ -174,6 +174,13 @@ body{
     background-color: #a5cc17;
     position: relative;
 }
+
+#pics_mobile{
+    min-height: 50vh;
+    background-color: #a5cc17;
+    position: relative;
+}
+
 #events:before{
     content: '';
     position: absolute;
@@ -381,7 +388,227 @@ h1 { margin:150px auto 30px auto; text-align:center; color:#fff;}
 	}
 }
 
-@media only screen and (min-width: 767px) and (max-width: 1024px) {
+@media only screen and (max-width: 767px) {
+	#text_love {
+		font-size: 1.5rem;
+	}
+}
+
+
+@media only screen and (max-width: 280px) {
+	#event_laptop{
+		display: none;
+	}
+	#event_mobile {
+		display: block !important;
+	}
+	#event_head{
+		font-size: 2rem;
+	}
+	.event_pic {
+		display: none;
+	}
+	#pics_mobile {
+		min-height: 40vh !important;
+		padding: 1rem 0 1rem 0;
+
+	}
+	#heading{
+		margin-left: 0rem;
+		font-size: 3.5rem;
+		margin-top: 34rem;
+	}
+	#event_name {
+		margin-bottom: 2rem;
+	}
+	#content {
+		padding-top: 2rem;
+	}
+	#events {
+		height: 100vh;
+	}
+	#ContactUs{
+		font-size: 2rem;
+	}
+}
+
+@media only screen and (min-width: 301px) and (max-width: 320px) {
+	#event_laptop{
+		display: none;
+	}
+	#event_mobile {
+		display: block !important;
+	}
+	#event_head{
+		font-size: 2.5rem;
+	}
+	.event_pic {
+		display: none;
+	}
+	#pics_mobile {
+		min-height: 40vh !important;
+		padding: 1rem 0 1rem 0;
+
+	}
+	#heading{
+		margin-left: 0rem;
+		font-size: 4.5rem;
+		margin-top: 25rem;
+	}
+	#event_name {
+		margin-bottom: 2rem;
+	}
+	#content {
+		padding-top: 2rem;
+	}
+	#events {
+		height: 100vh;
+	}
+}
+
+@media only screen and (min-width: 321px) and (max-width: 400px) {
+	#event_laptop{
+		display: none;
+	}
+	#event_mobile {
+		display: block !important;
+	}
+	#event_head{
+		font-size: 3rem;
+	}
+	.event_pic {
+		display: none;
+	}
+	#pics_mobile {
+		min-height: 40vh !important;
+		padding: 1rem 0 1rem 0;
+
+	}
+	#heading{
+		margin-left: 0rem;
+		font-size: 5rem;
+		margin-top: 32rem;
+	}
+	#event_name {
+		margin-bottom: 2rem;
+	}
+	#content {
+		padding-top: 2rem;
+	}
+	#events {
+		height: 100vh;
+	}
+}
+
+@media only screen and (min-width:401px) and (max-width: 449px) {
+	#event_laptop{
+		display: none;
+	}
+	#event_mobile {
+		display: block !important;
+	}
+	#event_head{
+		font-size: 3rem;
+	}
+	.event_pic {
+		display: none;
+	}
+	#pics_mobile {
+		min-height: 40vh !important;
+		padding: 1rem 0 1rem 0;
+
+	}
+	#heading{
+		margin-left: 0rem;
+		font-size: 6rem;
+		margin-top: 37rem;
+	}
+	#event_name {
+		margin-bottom: 2rem;
+	}
+	#content {
+		padding-top: 2rem;
+	}
+	#events {
+		height: 100vh;
+	}
+}
+
+@media only screen and (min-width:450px) and (max-width: 766px) {
+	#event_laptop{
+		display: none;
+	}
+	#event_mobile {
+		display: block !important;
+	}
+	#event_head{
+		font-size: 3rem;
+	}
+	.event_pic {
+		display: none;
+	}
+	#pics_mobile {
+		min-height: 40vh !important;
+		padding: 1rem 0 1rem 0;
+
+	}
+	#heading{
+		margin-left: 0rem;
+		font-size: 6rem;
+		margin-top: 30rem;
+	}
+	#event_name {
+		margin-bottom: 2rem;
+	}
+	#content {
+		padding-top: 2rem;
+	}
+	#events {
+		height: 100vh;
+	}
+}
+
+@media only screen and (min-width: 767px) and (max-width: 768px) {
+	#event_head{
+		font-size: 3rem;
+	}
+	.event_pic {
+		margin-top: 7rem;
+		margin-left: 0rem;
+		width: 100%;
+	}
+	.hi-slide {
+		width: 600px;
+		padding-left: 1.7rem;
+	}
+	#heading{
+		margin-left: 0rem;
+		font-size: 12rem;
+		margin-top: 40rem;
+	}
+	#event_laptop{
+		display: none;
+	}
+	#event_mobile {
+		display: block !important;
+	}
+	#pics_mobile {
+		min-height: 40vh !important;
+		padding: 3rem 0 3rem 0;
+	}
+
+	#pics_mobile img {
+		height: 80vh;
+		width: 50%;
+	}
+	.event_pic {
+		margin-top: 9rem;
+		margin-left: -2rem;
+		width: 100%;
+	}
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
 	#event_head{
 		font-size: 3rem
 	}
@@ -396,6 +623,32 @@ h1 { margin:150px auto 30px auto; text-align:center; color:#fff;}
 	}
 	#heading{
 		margin-left: 1rem;
+	}
+}
+
+@media only screen and (min-width: 1024px) and (min-height: 1366px) {
+	#event_name{
+		min-height: 60vh !important;
+	}
+
+	#pics {
+		min-height: 35vh;
+	}
+
+	#events {
+		min-height: 80vh;
+	}
+	.event_pic {
+		margin-top: 9rem;
+		margin-left: -2rem;
+		width: 100%;
+	}
+	#heading{
+		margin-left: 1rem;
+		margin-top: 40rem;
+	}
+	#contact{
+		min-height: 30vh;
 	}
 }
 
