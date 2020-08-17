@@ -225,48 +225,14 @@ body{
 	margin-left: 10px;
 	font-family: 'Poppins',sans-serif;
 	font-weight: 500;
+	text-align: justify;
 }
 
-/* Cards section */
-
-.card{
-	border-radius: 23px 23px 0 0;
+.event_pic {
+	height: 400px;
+	width: 90%;
+	border-radius: 19px;
 }
-#card_1 {
-	transform: rotate(-25deg);
-	margin-right: 1rem;
-	margin-top: 6rem;
-}
-
-#card_2 {
-	transform: rotate(-10deg);
-	margin-top: 1.3rem;
-}
-
-#card_4 {
-	transform: rotate(10deg);
-	margin-top: 1.3rem;
-}
-
-#card_5 {
-	transform: rotate(25deg);
-	margin-left: 1rem;
-	margin-top: 6rem;
-}
-
-.card-image {
-	height: 20rem;
-	width: 100%;
-	border-radius: 20px 20px 0 0;
-}
-
-#card_1:hover {
-	transform: scale(1.1);
-	cursor: pointer;
-}
-
-
-
 
 /* Contact Section */
 #contact {
@@ -336,5 +302,23 @@ body{
 	#events:before,
 	#event_name::before {
 		border: 0;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+	#event_head{
+		font-size: 4rem
+	}
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1360px) {
+	#event_head{
+		font-size: 4rem
+	}
+}
+
+@media only screen and (min-width: 1360px) and (max-width: 1440px) {
+	#event_head{
+		font-size: 4rem
 	}
 }
