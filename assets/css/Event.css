@@ -652,10 +652,27 @@ h1 { margin:150px auto 30px auto; text-align:center; color:#fff;}
 	}
 }
 
-@media only screen and (min-width: 1025px) and (max-width: 1360px) {
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+	#event_head{
+		font-size: 3rem
+	}
+	#event_name{
+		padding-bottom: 3rem;
+	}
+	.hi-slide {
+		width: 790px;
+		padding-left: 1.7rem;
+	}
+}
+
+@media only screen and (min-width: 1201px) and (max-width: 1360px) {
 	#event_head{
 		font-size: 4rem
 	}
+	#event_name{
+		padding-bottom: 3rem;
+	}
+	
 }
 
 @media only screen and (min-width: 1361px) and (max-width: 1440px) {
