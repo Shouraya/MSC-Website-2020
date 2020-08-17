@@ -611,7 +611,32 @@ h1 { margin:150px auto 30px auto; text-align:center; color:#fff;}
 	}
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
+@media only screen and (min-width: 769px) and (max-width: 899px) {
+	#event_laptop{
+		display: none;
+	}
+	#event_mobile {
+		display: block !important;
+	}
+	#pics_mobile img {
+		height: 90vh;
+		padding: 10vh 0;
+	}
+	#event_head{
+		font-size: 3rem
+	}
+	.event_pic {
+		margin-top: 7rem;
+		margin-left: 0rem;
+		width: 100%;
+	}
+	#heading{
+		margin-left: 1rem;
+		font-size: 13rem;
+	}
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1024px) {
 	#event_head{
 		font-size: 3rem
 	}
@@ -621,11 +646,12 @@ h1 { margin:150px auto 30px auto; text-align:center; color:#fff;}
 		width: 100%;
 	}
 	.hi-slide {
-		width: 800px;
-		padding-left: 1.7rem;
+		width: 780px;
+		padding-left: 1.8rem;
 	}
 	#heading{
 		margin-left: 1rem;
+		font-size: 15rem;
 	}
 }
 
