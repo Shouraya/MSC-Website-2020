@@ -13,7 +13,7 @@
         $.extend(true, setting, options);
     
         var states = [
-            { $zIndex: 1, width: 100, height: 120, top: 79, left: 154, $opacity: 0.1 },
+            // { $zIndex: 1, width: 100, height: 120, top: 79, left: 154, $opacity: 0.1 },
             { $zIndex: 1, width: 100, height: 120, top: 79, left: 154, $opacity: 0.1 },
             { $zIndex: 2, width: 120, height: 150, top: 69, left: 134, $opacity: 0.2 },
             { $zIndex: 3, width: 130, height: 170, top: 59, left: 0, $opacity: 0.4 },
