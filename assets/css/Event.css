@@ -388,7 +388,84 @@ h1 { margin:150px auto 30px auto; text-align:center; color:#fff;}
 	}
 }
 
-@media only screen and (max-width: 766px) {
+@media only screen and (max-width: 767px) {
+	#text_love {
+		font-size: 1.5rem;
+	}
+}
+
+@media only screen and (max-width: 280px) {
+	#event_laptop{
+		display: none;
+	}
+	#event_mobile {
+		display: block !important;
+	}
+	#event_head{
+		font-size: 2rem;
+	}
+	.event_pic {
+		display: none;
+	}
+	#pics_mobile {
+		min-height: 40vh !important;
+		padding: 1rem 0 1rem 0;
+
+	}
+	#heading{
+		margin-left: 0rem;
+		font-size: 3.5rem;
+		margin-top: 34rem;
+	}
+	#event_name {
+		margin-bottom: 2rem;
+	}
+	#content {
+		padding-top: 2rem;
+	}
+	#events {
+		height: 100vh;
+	}
+	#ContactUs{
+		font-size: 2rem;
+	}
+}
+
+@media only screen and (min-width: 301px) and (max-width: 320px) {
+	#event_laptop{
+		display: none;
+	}
+	#event_mobile {
+		display: block !important;
+	}
+	#event_head{
+		font-size: 2.5rem;
+	}
+	.event_pic {
+		display: none;
+	}
+	#pics_mobile {
+		min-height: 40vh !important;
+		padding: 1rem 0 1rem 0;
+
+	}
+	#heading{
+		margin-left: 0rem;
+		font-size: 4.5rem;
+		margin-top: 25rem;
+	}
+	#event_name {
+		margin-bottom: 2rem;
+	}
+	#content {
+		padding-top: 2rem;
+	}
+	#events {
+		height: 100vh;
+	}
+}
+
+@media only screen and (min-width: 321px) and (max-width: 400px) {
 	#event_laptop{
 		display: none;
 	}
@@ -410,6 +487,74 @@ h1 { margin:150px auto 30px auto; text-align:center; color:#fff;}
 		margin-left: 0rem;
 		font-size: 5rem;
 		margin-top: 32rem;
+	}
+	#event_name {
+		margin-bottom: 2rem;
+	}
+	#content {
+		padding-top: 2rem;
+	}
+	#events {
+		height: 100vh;
+	}
+}
+
+@media only screen and (min-width:401px) and (max-width: 449px) {
+	#event_laptop{
+		display: none;
+	}
+	#event_mobile {
+		display: block !important;
+	}
+	#event_head{
+		font-size: 3rem;
+	}
+	.event_pic {
+		display: none;
+	}
+	#pics_mobile {
+		min-height: 40vh !important;
+		padding: 1rem 0 1rem 0;
+
+	}
+	#heading{
+		margin-left: 0rem;
+		font-size: 6rem;
+		margin-top: 37rem;
+	}
+	#event_name {
+		margin-bottom: 2rem;
+	}
+	#content {
+		padding-top: 2rem;
+	}
+	#events {
+		height: 100vh;
+	}
+}
+
+@media only screen and (min-width:450px) and (max-width: 766px) {
+	#event_laptop{
+		display: none;
+	}
+	#event_mobile {
+		display: block !important;
+	}
+	#event_head{
+		font-size: 3rem;
+	}
+	.event_pic {
+		display: none;
+	}
+	#pics_mobile {
+		min-height: 40vh !important;
+		padding: 1rem 0 1rem 0;
+
+	}
+	#heading{
+		margin-left: 0rem;
+		font-size: 6rem;
+		margin-top: 30rem;
 	}
 	#event_name {
 		margin-bottom: 2rem;
